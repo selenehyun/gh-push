@@ -7,8 +7,8 @@ if [[ -z "$GITHUB_TOKEN" ]]; then
 	exit 1
 fi
 
-if [[ -z "$FILES" ]]; then
-	echo "Set the FILES env variable."
+if [[ -z "$COMMIT_FILES" ]]; then
+	echo "Set the COMMIT_FILES env variable."
 	exit 1
 fi
 
@@ -34,6 +34,6 @@ git config --global user.email "push@no-reply.github.com"
 git config --global user.name "GitHub Push Action"
 
 # check commit exists
-git add $FILES
+git add $COMMIT_FILES
 git commit -m "GitHub Push"
 git push origin $BRANCH
