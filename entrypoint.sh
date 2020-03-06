@@ -7,13 +7,13 @@ if [[ -z "$GITHUB_TOKEN" ]]; then
 	exit 1
 fi
 
-if [[ -z "$REPO_FULLNAME" ]]; then
-	echo "Set the REPO_FULLNAME env variable."
+if [[ -z "$COMMIT_FILES" ]]; then
+	echo "Set the COMMIT_FILES env variable."
 	exit 1
 fi
 
-if [[ -z "$PUBLISH_DIR" ]]; then
-	echo "Set the PUBLISH_DIR env variable."
+if [[ -z "$REPO_FULLNAME" ]]; then
+	echo "Set the REPO_FULLNAME env variable."
 	exit 1
 fi
 
