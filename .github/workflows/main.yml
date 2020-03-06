@@ -10,11 +10,10 @@ jobs:
         fetch-depth: 0
     - name: Hello world action step
       id: hello
-      uses: selenehyun/gh-push@v0.0.10
+      uses: selenehyun/gh-push@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COMMIT_FILES: ./Dockerfile
-        PUBLISH_DIR: dist
         REPO_FULLNAME: selenehyun/test
         BRANCH: master
     # Use the output from the `hello` step
