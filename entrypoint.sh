@@ -33,7 +33,8 @@ git config --global user.name "GitHub Push Action"
 if [ -z "$(git status --porcelain)" ]; then
     echo "Clean!"
 else
-    git add $COMMIT_FILES
+    git add --all
     git commit -m "GitHub Push"
     git push origin $BRANCH
 fi
+rm -rf /$REPO_FULLNAME
