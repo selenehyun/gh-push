@@ -7,8 +7,8 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: selenehyun/gh-push@v0.0.5
-      with:
+      uses: selenehyun/gh-push@v0.0.6
+      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     # Use the output from the `hello` step
     # - name: Get the output time
