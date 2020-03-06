@@ -5,9 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 0
     - name: Hello world action step
       id: hello
-      uses: selenehyun/gh-push@v0.0.9
+      uses: selenehyun/gh-push@v0.0.10
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COMMIT_FILES: ./Dockerfile
