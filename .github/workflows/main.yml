@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: selenehyun/gh-push@v0.0.7
+      uses: selenehyun/gh-push@v0.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         COMMIT_FILES: ./Dockerfile
