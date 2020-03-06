@@ -29,7 +29,7 @@ fi
 
 git clone --depth 1 https://x-access-token:$GITHUB_TOKEN@github.com/$REPO_FULLNAME.git /$REPO_FULLNAME
 echo $PWD
-ls -al /$REPO_FULLNAME
+ls -al
 cp -r ./$PUBLISH_DIR /$REPO_FULLNAME
 cd /$REPO_FULLNAME
 git config --global user.email "push@no-reply.github.com"
