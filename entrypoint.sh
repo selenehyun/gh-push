@@ -30,7 +30,10 @@ cd /$REPO_FULLNAME
 git config --global user.email "push@no-reply.github.com"
 git config --global user.name "GitHub Push Action"
 
-# check commit exists
-git add $COMMIT_FILES
-git commit -m "GitHub Push"
-git push origin $BRANCH
+if [ -z "$(git status --porcelain)" ]; then
+    echo "Clean!"
+else
+    git add $COMMIT_FILES
+    git commit -m "GitHub Push"
+    git push origin $BRANCH
+fi
