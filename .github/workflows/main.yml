@@ -1,21 +1,17 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  dog_fooding:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Dog Fooding
     steps:
     - uses: actions/checkout@master
       with:
         fetch-depth: 0
-    - name: Hello world action step
-      id: hello
+    - name: My food
       uses: selenehyun/gh-push@master
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         COMMIT_FILES: ./Dockerfile
         REPO_FULLNAME: selenehyun/test
         BRANCH: master
-    # Use the output from the `hello` step
-    # - name: Get the output time
-    #   run: echo "The time was ${{ steps.hello.outputs.time }}"
