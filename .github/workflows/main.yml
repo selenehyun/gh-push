@@ -12,7 +12,7 @@ jobs:
       id: hello
       uses: selenehyun/gh-push@master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         COMMIT_FILES: ./Dockerfile
         REPO_FULLNAME: selenehyun/test
         BRANCH: master
