@@ -3,8 +3,8 @@ This is the Action we created to release the result of building the Repository's
 
 I am using it myself, and the build results of the code I write [here](https://github.com/polym-team/official-site) are deployed [here.](https://github.com/polym-team/polym-team.github.io)
 
-## **Be careful** ⚠️
-⚠️ This action erases all files in the repository to be deployed and then deploys only the new changes.
+## **Be careful**
+⚠️ This action clear all files in the repository to be deployed and then deploys only the new changes.
 
 ## Inputs
 ### `GITHUB_TOKEN`
@@ -22,7 +22,7 @@ Ex) `dist/*`
 Enter the name of the repository to be deployed.<br />
 Ex) `selenehyun/test`
 
-Did you read [this?](#be-careful-%EF%B8%8F)
+**Did you read [this?](#be-careful)**
 
 ### `BRANCH`
 **Required**
