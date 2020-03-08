@@ -1,7 +1,8 @@
 name: 'GitHub Repo Push'
 description: 'The desired files can be Repository Commit to Push.'
-icon: 'cloud-lightning'
-color: 'blue'
+branding:
+  icon: 'cloud-lightning'
+  color: 'blue'
 runs:
   using: 'docker'
   image: 'Dockerfile'
