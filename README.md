@@ -1,5 +1,6 @@
 # GitHub Build Push
-This is the Action we created to release the result of building the Repository's file into another Repository.
+This is the Action we created to release the result of building the Repository's file into another Repository.<br />
+This is useful when managing Sources used for GitHub Pages to another Repository.
 
 I am using it myself, and the build results of the code I write [here](https://github.com/polym-team/official-site) are deployed [here.](https://github.com/polym-team/polym-team.github.io)
 
