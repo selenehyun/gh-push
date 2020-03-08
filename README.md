@@ -22,7 +22,7 @@ Ex) `dist/*`
 Enter the name of the repository to be deployed.<br />
 Ex) `selenehyun/test`
 
-Did you read [this?](./#be-careful-%EF%B8%8F)
+Did you read [this?](#be-careful-%EF%B8%8F)
 
 ### `BRANCH`
 **Required**
