@@ -1,4 +1,4 @@
-name: 'GitHub Push'
+name: 'GitHub Repo Push'
 description: 'The desired files can be Repository Commit to Push.'
 runs:
   using: 'docker'
